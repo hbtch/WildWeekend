@@ -103,3 +103,43 @@ h1 {
   width: 24px;
   height: 24px;
 }
+
+/* Стили для мобильной версии */
+@media (width < 640px) {
+  .hero {
+    max-width: 100%;
+    padding: 8px;
+  }
+  
+  .hero__container {
+    max-width: 100%;
+    background-size: cover;
+  }
+  
+  .hero__content {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+
+  .search-bar__input-wrapper {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .search-bar__input--with-icon {
+    width: 100%;
+    padding: 12px 12px 12px 36px;
+    background-size: 16px 16px;
+  }
+}
