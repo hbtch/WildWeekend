@@ -7,34 +7,42 @@
     <link rel="stylesheet" href="./assets/style/header.css">
     <link rel="stylesheet" href="./assets/style/hero.css">
     <link rel="stylesheet" href="./assets/style/popular-camps.css">
+    <link rel="stylesheet" href="./assets/style/project.css">
     <link rel="stylesheet" href="./assets/style/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
     <title>Wild Weekend</title>
+    <link rel="shortcut icon" href="./assets/image/wwlogo.svg" type="image"/>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="./assets/image/wwlogo.svg" alt="Wild Weekend">
+                <img src="./assets/image/wwlogo.svg" alt="Wild Weekend" class="header__logo-img">
             </div>
-            <div class="nav">
+            <div class="header__nav nav">
+                <button class="nav__btn nav__btn--like">
+                    <img src="./assets/image/likeBtn.svg" alt="Кнопка понравившихся" class="nav__icon">
+                </button>
                 <button class="nav__btn nav__btn--login">
-                    <img src="assets/image/login.svg" class="nav__icon" alt="login">
+                    <img src="./assets/image/login.svg" alt="login" class="nav__icon">
                     <span class="nav__text">Войти</span>
                 </button>
             </div>
         </div>
-    </header>  
+    </header>    
     <main>
             <section class="hero">
-                <div class="hero-container">
-                    <div class="hero-content">
+                <div class="hero__container">
+                    <div class="hero__content">
                         <h1>Найдите идеальное место <br> для вашего отдыха</h1>
-                        <div class="search-bar">
-                            <div class="input-wrapper">
-                                <input type="text" class="input-with-icon" placeholder="Кемпинг, стоянка, платный водоём">
+                        <div class="hero__search-bar search-bar">
+                            <div class="search-bar__input-wrapper">
+                                <input type="text" class="search-bar__input search-bar__input--with-icon" placeholder="Кемпинг, стоянка, платный водоём">
                             </div>
-                            <button class="search-button">
-                                <img src="./assets/image/search.svg" alt="Иконка поиска" class="search-icon">
+                            <button class="search-bar__button">
+                                <img src="./assets/image/search.svg" alt="Иконка поиска" class="search-bar__icon">
                                 Искать
                             </button>
                         </div>
@@ -43,40 +51,133 @@
             </section>
 
             <section class="popular-camps">
-                <h2>Популярные кемпинги</h2>
-                <div class="container">
-                    <div class="camp-list">
+                <div class="popular-camps__container">
+                    <h2>Популярные кемпинги</h2>
+                    <div class="popular-camps__list">
                     <div class="camp-card">
-                        <img src="./assets/image/medvedica.png" alt="Кемпинг на Медведице">
-                        <div class="camp-info">
-                            <p>⭐ 8.4 (440 отзывов)</p>
-                            <h3>Уединённый кемпинг на Медведице</h3>
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/medvedica.png" alt="Кемпинг на Медведице">
+                            <span class="camp-card__badge-icon"></span>
                         </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">8.4</span>
+                            <span class="camp-card__rating-reviews">(440 отзывов)</span>
+                        </div>
+                        <h3>Уединённый кемпинг на Медведице</h3>
                     </div>
                     <div class="camp-card">
-                        <img src="./assets/image/ritoe.png" alt="Кемпинг у озера Рытое">
-                        <div class="camp-info">
-                            <p>⭐ Новое место</p>
-                            <h3>Стоянка и кемпинг возле озера Рытое</h3>
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/ritoe.png" alt="Кемпинг возле озера Рытое">
+                            <span class="camp-card__badge-icon"></span>
                         </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">Новое место</span>
+                        </div>
+                        <h3>Стоянка и кемпинг возле озера Рытое</h3>
                     </div>
                     <div class="camp-card">
-                        <img src="./assets/image/chistik.png" alt="Кемпинг Чистик">
-                        <div class="camp-info">
-                            <p>⭐ 8.4 (440 отзывов)</p>
-                            <h3>Стоянка и кемпинг возле озера Чистик</h3>
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/chistik.png" alt="Кемпинг Чистик">
+                            <span class="camp-card__badge-icon"></span>
                         </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">8.4</span>
+                            <span class="camp-card__rating-reviews">(440 отзывов)</span>
+                        </div>
+                        <h3>Стоянка и кемпинг возле озера Чистик</h3>
                     </div>
                     <div class="camp-card">
-                        <img src="./assets/image/lisica.png" alt="Кемпинг на Лисице">
-                        <div class="camp-info">
-                            <p>⭐ Новое место</p>
-                            <h3>Уединённый кемпинг на Лисице</h3>
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/lisica.png" alt="Кемпинг на Лисице">
+                            <span class="camp-card__badge-icon"></span>
+                        </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">Новое место</span>
+                        </div>
+                        <h3>Уединённый кемпинг на Лисице</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-parking">
+                <div class="popular-parking__container">
+                    <h2>Популярные стоянки</h2>
+                    <div class="popular-parking__list">
+                    <div class="camp-card">
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/lisica.png" alt="Кемпинг на Лисице">
+                            <span class="camp-card__badge-icon"></span>
+                        </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">Новое место</span>
+                        </div>
+                        <h3>Уединённый кемпинг на Лисице</h3>
+                    </div>
+                    <div class="camp-card">
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/medvedica.png" alt="Кемпинг на Медведице">
+                            <span class="camp-card__badge-icon"></span>
+                        </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">8.4</span>
+                            <span class="camp-card__rating-reviews">(440 отзывов)</span>
+                        </div>
+                        <h3>Уединенный кемпинг на Медведице</h3>
+                    </div>
+                    <div class="camp-card">
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/ritoe.png" alt="Кемпинг возле озера Рытое">
+                            <span class="camp-card__badge-icon"></span>
+                        </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">Новое место</span>
+                        </div>
+                        <h3>Стоянка и кемпинг возле озера Рытое</h3>
+                    </div>
+                    <div class="camp-card">
+                        <div class="camp-card__image-container">
+                            <img src="./assets/image/chistik.png" alt="Кемпинг возле озера Чистик">
+                            <span class="camp-card__badge-icon"></span>
+                        </div>
+                        <div class="camp-card__info">
+                            <span class="camp-card__rating-icon"></span>
+                            <span class="camp-card__rating-score">8.4</span>
+                            <span class="camp-card__rating-reviews">(440 отзывов)</span>
+                        </div>
+                        <h3>Уединённый кемпинг на Лисице</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="project__container">
+                    <h2>О проекте</h2>
+                    <div class="project__card-container">
+                        <div class="project__card project__card--left">
+                            <img src="./assets/image/wwlogo.svg" class="project__logo" alt="Логотип WildWeekend" />
+                            <p class="project__text">Здесь нужен текст небольшой о том кто как и почему это делает. <br> А ещё для чего и для кого. Съехать страссы на просёлок можно сразу <br> за Красным Яром. Ориентир для поворота — табличка «База отдыха <br> СГЮА». Просёлочная дорога идёт вдоль всего побережья, <br> периодически появляются спуски к берегу на кемпинговые площадки</p>
+                        </div>
+                        <div class="project__card project__card--right">
+                            <img src="./assets/image/main.png" class="project-image" alt="Wild Weekend" />
                         </div>
                     </div>
                 </div>
             </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text footer__text--left">2023, Кирилл Демидов</p>
+            <p class="footer__text footer__text--right">Присылайте ваши пожелания и обратную связь на почту 
+                <a href="mailto:mail@wildweekend.ru" class="footer__link">mail@wildweekend.ru</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

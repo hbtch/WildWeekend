@@ -20,27 +20,48 @@
   padding: 0;
 }
 
-.header__logo img { 
+.header__logo-img { 
   width: 104px;
   height: 32px;
 }
 
 .nav {
+  width: 133px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.nav__btn {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgb(232, 232, 232);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__btn .nav__btn--like {
+  width: 21px;
+  height: 19px;
+}
+
+.nav__btn--login {
   width: 85px;
   height: 40px;
   padding: 8px;
   box-sizing: border-box;
   border: 1px solid rgb(232, 232, 232);
   background: rgb(255, 255, 255);
-}
-
-.nav__btn--login {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.nav__icon {
+.nav__btn--login .nav__icon {
   width: 24px;
   height: 24px;
 }

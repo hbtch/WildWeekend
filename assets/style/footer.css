@@ -1,0 +1,51 @@
+.footer {
+    background-color: #FFFFFF;
+    max-width: 1280px;
+    width: 100%;
+    height: 64px;
+    margin: 64px auto;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(232, 232, 232);
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.footer__container {
+    max-width: 1176px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__text--left {
+    color: rgb(28, 28, 28);
+    font-family: Geologica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer__text--right {
+    font-family: Geologica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #1C1C1C;
+}
+
+.footer__link {
+    font-family: Geologica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #025F74;
+}

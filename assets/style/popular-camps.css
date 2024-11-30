@@ -2,7 +2,19 @@
   background-color: #FFFFFF;
   max-width: 1280px;
   width: 100%;
+  height: auto;
+  margin: 64px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.popular-camps__container {
   margin: 0 auto;
+  max-width: 1176px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h2 {
@@ -12,10 +24,11 @@ h2 {
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0%;
+  margin: 0 0 24px;
   text-align: left;
 }
 
-.camp-list {
+.popular-camps__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,6 +40,54 @@ h2 {
   height: 276px;
 }
 
+.camp-card__image-container {
+  position: relative;
+}
+
+.camp-card__badge-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: url('../image/like.svg') no-repeat center;
+  background-size: contain;
+  z-index: 10; 
+}
+
+.camp-card__info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.camp-card__rating-icon {
+  width: 14px;
+  height: 13px;
+  background: url('../image/star.svg') no-repeat center;
+  background-size: contain;
+}
+
+.camp-card__rating-score {
+  color: rgb(28, 28, 28);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  margin-left: 1.5px;
+}
+
+.camp-card__rating-reviews {
+  color: rgb(111, 111, 111);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  margin-left: 4px;
+}
+
 h3 {
   color: rgb(28, 28, 28);
   font-family: Geologica;
@@ -35,4 +96,24 @@ h3 {
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+}
+
+.popular-parking {
+  padding-top: 64px;
+}
+
+.popular-parking__container {
+  margin: 0 auto;
+  max-width: 1176px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popular-parking__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
 }
