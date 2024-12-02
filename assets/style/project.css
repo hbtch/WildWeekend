@@ -53,6 +53,20 @@
     height: 392px;
 }
 
+@media (width < 1024px) {
+    .project {
+        max-width: 100%;
+    }
+    
+    .project__container {
+        max-width: 95%;
+    }
+
+    .project__text {
+        font-size: 12px;
+    }
+}
+
 /* Стили для мобильной версии */
 @media (width < 640px) {
     .project {
@@ -60,7 +74,7 @@
     }
     
     .project__container {
-        max-width: 100%;
+        max-width: 85%;
     }
 
     .project__card--left {

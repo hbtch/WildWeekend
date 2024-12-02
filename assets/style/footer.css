@@ -49,3 +49,24 @@
     text-align: left;
     color: #025F74;
 }
+
+
+@media (width < 1024px) {
+    .footer {
+        max-width: 100%;
+    }
+
+    .footer__container {
+        max-width: 90%;
+    }
+}
+
+@media (width < 640px) {
+    .footer {
+        max-width: 100%;
+    }
+
+    .footer__container {
+        max-width: 90%;
+    }
+}

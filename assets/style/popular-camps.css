@@ -137,3 +137,28 @@ h3 {
   top: 50%;
   z-index: 10;
 }
+
+
+@media (width < 1024px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (width < 640px) {
+  h2 {
+    text-align: center;
+  }
+
+  .camp-card:not(:first-child) {
+    display: none; 
+  }
+
+  .slider-button {
+    right: 20px; 
+  }
+  
+  .slider-button-next {
+    right: 20px;
+  }
+}
